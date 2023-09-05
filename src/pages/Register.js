@@ -21,26 +21,13 @@ const Register = () => {
         const URL = "http://localhost:5000/user/"+username ;
         axios.post(URL,body)
         .then((result) => {
-            // console.log(result.data);
-          //   if (result.data.user?.userid != username) {
-          //     alert("User not found");
-          //     navigate('/error');
-          // } else if (result.data.user?.password !== password ) {
-          //     alert("Incorrect password");
-          //     navigate('/error');
-          // } else {
-          //   console.log(result.data?.user.userName);
           if (result.data.error === 'User already registered') {
             alert('User already registered');
             navigate('/login'); // Redirect to the login page
           } else {
             alert('Registration complete');
             navigate('/todo', { state: { user: result.data?.user, task: result.data?.task } });
-            // navigate('/login'); 
           }
-              // alert("Registration complete");
-              // navigate('/todo', {state : { user : result.data?.user , task : result.data?.task}});
-          // }
         }).catch((err) => {
             console.log(err.status);
             if(err)
@@ -52,14 +39,20 @@ const Register = () => {
     <div>
       Register
 
-      <form onSubmit={submitForm}>
-    <input type='text'  onChange={(event) => setUsername(event.target.value)}/>
-    <input type='text' onChange={(event) => setNewUserName(event.target.value)}/>
-      <input type='password' onChange={(event) => setPassword(event.target.value)}/>
+      <div className='container-fluid'>
+        <div className='row'>
+        <form onSubmit={submitForm}>
+       <div> <label for="userid">Userid : </label>
+      <input type='text' name='userid'  onChange={(event) => setUsername(event.target.value)}/></div> <br/>
+     <div> <label for="username">Username : </label>
+    <input type='text' name='username' onChange={(event) => setNewUserName(event.target.value)}/></div><br/>
+    <div><label for="password">Password : </label>
+      <input type='password' name='password' onChange={(event) => setPassword(event.target.value)}/></div><br/>
 
       <button type='submit'>Submit</button>
     </form>
-
+        </div>
+</div>
     </div>
   )
 }

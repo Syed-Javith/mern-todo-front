@@ -70,18 +70,7 @@ const Todo = (props) => {
   return (
     <div>
       Todo {username}
-
-
-      {/* { tasks?.task.length == 0 && <p>No Tasks yet</p>} */}
-
-
       {  tasks.task && tasks.task.length > 0 ? updatedTasks.map((task)=>{
-        // return <div 
-        // key={task.taskid}>
-        //   <input type='checkbox' ></input>
-        //   <p >{task.taskDesc} </p> 
-        //   <button onClick={() => deleteTask(task.taskid)}>Delete</button>
-        //   </div>
         return <List key={task.taskid} taskid = {task.taskid} desc={task.taskDesc} deleteTask={deleteTask}/>
       }) : <p>No Tasks yet</p>}
 
