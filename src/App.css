@@ -41,3 +41,79 @@
 p{
   display : "inline-block";
 }
+
+
+nav{
+  background-color: crimson;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.footer-div .icons{
+  margin-bottom: 0;
+}
+
+.footer-list{
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  margin: 0;
+}
+
+.contents{
+  padding-top: 80px;
+}
+
+footer{
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  /* position: fixed; */
+  bottom:  0;
+  width: 100%;
+  font-size: 1.05rem;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+footer h3{
+  text-align: center;
+}
+
+body{
+  text-align: center;
+  align-items: center;
+}
+.center{
+  text-align : center;
+}
+
+.home-div{
+  padding: 20px;
+  margin: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+@media  screen and (max-width :800px){
+  footer div{
+   text-align: center;
+  }
+  footer{
+    font-size: 0.85rem;
+    padding: 5px;
+  }
+  .home-div{
+    width: 100%;
+    padding: 30px;
+  }
+  body{
+    font-size: 0.75rem;;
+  }
+}

@@ -6,6 +6,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Todo from './pages/Todo';
 import Error from './pages/Error';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 // import { useState , createContext} from 'react';
 
 
@@ -19,10 +21,8 @@ function App() {
   return (
     // <UserContext.Provider value={user}>
     <Router>
-      <Link to='/' >Home</Link>
-      <Link to='/login' >Login</Link>
-      <Link to='/register' >Register</Link>
-      <Link to='/todo' >Todo</Link>
+      
+    <Nav/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>} />
@@ -30,6 +30,7 @@ function App() {
         <Route path='/todo' element={<Todo  />}/>
         <Route path='/error' element={<Error/>}/>
       </Routes>
+      <Footer />
     </Router>
     // </UserContext.Provider>
   );

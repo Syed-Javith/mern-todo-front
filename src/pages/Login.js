@@ -40,8 +40,8 @@ const Login = () => {
 
 
       <form onSubmit={submitForm}>
-    <input type='text'  onChange={(event) => setUsername(event.target.value)}/>
-      <input type='password' onChange={(event) => setPassword(event.target.value)}/>
+     Id : <input type='text'  onChange={(event) => setUsername(event.target.value)}/>
+      Password : <input type='password' onChange={(event) => setPassword(event.target.value)}/>
 
       <button type='submit'>Submit</button>
     </form>

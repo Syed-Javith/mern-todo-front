@@ -35,15 +35,12 @@ const Home = () => {
 
     // }
   return (
+    <div className='home-div'>
+      <h1 className="center">Welcome Home</h1>
+
     <div>
-      <h1>Welcome Home Here</h1>
-
-    {/* <form onSubmit={submitForm}>
-    <input type='text'  onChange={(event) => setUsername(event.target.value)}/>
-      <input type='password' onChange={(event) => setPassword(event.target.value)}/>
-
-      <button type='submit'>Submit</button>
-    </form> */}
+    <p className="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim neque eius accusamus dolorum quisquamrepudiandae beatae illum, obcaecati corporis tenetur sit! Voluptatem autem hic non.Optio eu reprehenderit minima blanditiis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim neque eius accusamus  dolorum quisquam repudiandae beatae illum, obcaecati corporis tenetur sit! Voluptatem autem hic non. Optio eum reprehenderit minima blanditiis</p>
+    </div>
     <Link to="/login" >Login</Link>
     <Link to="/register" >Register</Link>  
     </div>
