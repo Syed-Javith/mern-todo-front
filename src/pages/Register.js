@@ -18,7 +18,7 @@ const Register = () => {
           userName : newUserName,
           password : password
         }
-        const URL = "http://localhost:5000/user/"+username ;
+        const URL = `${url}user/${username}` ;
         axios.post(URL,body)
         .then((result) => {
           if (result.data.error === 'User already registered') {

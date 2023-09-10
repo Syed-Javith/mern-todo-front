@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import axios from 'axios';
 import List from '../components/List';
+import { url } from '../url';
 
 // import { UserContext } from '../App';
 
@@ -31,7 +32,7 @@ const Todo = (props) => {
 
   const addTask = (e) =>{
     e.preventDefault();
-    const URL = `http://localhost:5000/user/${userid}/${id}`;
+    const URL = `${url}user/${userid}/${id}`;
     console.log(URL);
     const data = {
       taskDesc : desc ,
@@ -53,7 +54,7 @@ const Todo = (props) => {
 
     console.log("pressed " + taskid);
     
-    const URL = `http://localhost:5000/user/${userid}/${taskid}`;
+    const URL = `${url}user/${userid}/${taskid}`;
 
     console.log(URL);
 

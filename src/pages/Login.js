@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { url } from '../url';
 
 const Login = () => {
 
@@ -13,7 +14,7 @@ const Login = () => {
         event.preventDefault();
         console.log(username);
         console.log(password);
-        const URL = "http://localhost:5000/user/"+username ;
+        const URL = `${url}user/${username}` ;
         axios.get(URL)
         .then((result) => {
             console.log(result.data);

@@ -23,6 +23,7 @@ function App() {
     <Router>
       
     <Nav/>
+      <div className='wrap'>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>} />
@@ -30,7 +31,8 @@ function App() {
         <Route path='/todo' element={<Todo  />}/>
         <Route path='/error' element={<Error/>}/>
       </Routes>
-      <Footer />
+      </div>
+      {/* <Footer /> */}
     </Router>
     // </UserContext.Provider>
   );

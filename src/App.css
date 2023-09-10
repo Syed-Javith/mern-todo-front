@@ -63,7 +63,8 @@ nav{
 }
 
 .contents{
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  position: relative;
 }
 
 footer{
@@ -74,6 +75,11 @@ footer{
   bottom:  0;
   width: 100%;
   font-size: 1.05rem;
+}
+footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
 footer a{
@@ -120,4 +126,8 @@ body{
   body{
     font-size: 0.75rem;;
   }
+}
+
+.wrap{
+  margin: 20px;
 }

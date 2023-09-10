@@ -2,8 +2,6 @@ import React from 'react'
 
 const Footer = () => {
   return (
-        // <section className="footer" id="contact">
-        <>
 		<footer className="contents">
 			<h3>You can approach me by</h3>
 			<div className="container-fluid">
@@ -54,9 +52,6 @@ const Footer = () => {
             <p style={{textAlign: "center"}}>© 2023 Syed Javith</p>
 		</footer>
 		
-        </>
-	// </section>
-
   )
 }
 
