@@ -7,7 +7,6 @@ import Register from './pages/Register';
 import Todo from './pages/Todo';
 import Error from './pages/Error';
 import Nav from './components/Nav';
-import Footer from './components/Footer';
 // import { useState , createContext} from 'react';
 
 
