@@ -27,6 +27,7 @@ const Todo = () => {
 
   if(userid === null || username === "" || userid === undefined || username === undefined){
     // alert("please login to continue");
+    setUserId("");
     navigate('/login');
   }
 
