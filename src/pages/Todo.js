@@ -60,7 +60,7 @@ const Todo = () => {
 
     axios.patch(URL)
     .then((result) => {
-      setUpdatedTasks(updatedTasks.filter((task) => task.taskid != taskid));
+      setUpdatedTasks(updatedTasks.filter((task) => task.taskid !== taskid));
       console.log(updatedTasks);
       console.log(result);
     }).catch((err) => {

@@ -18,7 +18,7 @@ const Login = () => {
         axios.get(URL)
         .then((result) => {
             console.log(result.data);
-            if (result.data.user?.userid != username) {
+            if (result.data.user?.userid !== username) {
               alert("User not found");
               navigate('/error');
           } else if (result.data.user?.password !== password ) {
